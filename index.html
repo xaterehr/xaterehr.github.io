@@ -21,32 +21,29 @@
                 <div class="progress-bar" id="myBar"></div>
            </div>
       <nav>
-              <i class="fa fa-address-card">
-                <span>درباره ی من</span>
-                </i>
-                <div class="dropdown">
-                    <i class="fa fa-chalkboard">
-                        <span id="teach">اموزش ها</span>
-                        </i>
-                    <div class="dropdown-content">
-                      <a href="teach.html">504</a>
-                      <a href="#">گرامر</a>
-                    </div>
-                  </div>
-                
-                <i class="fa fa-book">
-                <span>کتاب ها</span>
-                </i>
-                <i class="fa fa-gamepad">
-                <span>بازی ها و برنامه ها</span>
-                </i>
-                <i class="fa fa-book">
-                <span> داستانهای دو زبانه</span>
-                </i>
-            </nav>
-            <section>
+          </div>
+<div class="topnav" id="myTopnav">
+    <a href="#home">درباره ی من</a>
+    <a href="#news">کتاب ها</a>
+    <a href="#contact">داستانهای دو زبانه</a>
+    <div class="dropdown">
+      <button class="dropbtn">اموزش ها 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">گرامر</a>
+        <a href="teach.html">504</a>
+      </div>
+    </div> 
+    <a href="#about">بازی ها و برنامه ها</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
 
-                <h3 style="text-align: right;" class="text-pop-up-top ">سلام به  سایت ی من خوش امدید</h3>
+
+        </nav>
+            <section>
+                <h3 style="text-align: right;" id="text-pop" class="text-pop-up-top">welcome to website</h3>
+
             </section>
         </header>
         <main>
@@ -103,11 +100,12 @@
                     how much برای اسامی غیر قابل رشمارش می اید 
                 مثلا how much do you love animals ? چقدر حیوانات دوست داری ؟
             مبحث اسامی قابل شمارش و غیر قابل شمارش اموزش مجزا دارد که میتوانید در بالا قسمت اموزش ها در گرامر  ان را مطالعه کنید</p>
-            
+            <h1>پیشنهادات</h1>
+                    <hr>
             <div class="cards">
-                    <div id="box1" class="card">buy</div>
-                    <div id="box2" class="card">buy</div>
-                    <div id="box3" class="card">buy</div>
+                    <div id="box1" class="card"><a style="text-decoration: none;color:black;" href="teach.html">504</a></div>
+                    <div id="box2" class="card"><a style="text-decoration: none;color:black;" href="teach.html">504</a></div>
+                    <div id="box3" class="card"><a style="text-decoration: none;color:black;" href="teach.html">504</a></div>
                 </div>
 
             </section>
@@ -126,18 +124,35 @@
                     document.getElementById('visits').innerText = response.value;
                 }
                 </script>
-                <script async src="https://api.countapi.xyz/hit/xaterehrr.github.io/visits?callback=count"></script>
+                <script async src="https://api.countapi.xyz/hit/khatereh.github.io/visits?callback=count"></script>
         </footer>
     </div>
+
+
+    
     <script>
+        
         window.onscroll = function() {myFunction()};
+
         function myFunction() {
         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
-        }                                                            
+
+        }
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
     </script>
+
+
+   
 </body>
 </html>
 
