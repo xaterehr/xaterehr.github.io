@@ -1,0 +1,216 @@
+body {
+  height: 150vh;
+  margin: 0;
+  font-size: 16px;
+  background-color:whitesmoke;
+}
+main .content{
+  direction: rtl;
+}
+
+.main-container{
+  width: 100%;
+  max-width: 1800px;
+  margin: 0px auto;
+  font-size: 1em;
+}
+header , footer{
+  background-color:#e66465;
+  padding: 20px;
+  color: aliceblue
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+#box1 {
+  background-color: orange;
+}
+#box2 {
+  background-color: #34fe9b;
+} 
+
+#box3 {
+  background-color:#736dd5;
+}
+
+
+header nav{
+  display: flex;
+}
+
+header nav span{
+  margin-right: 20px;
+
+  padding: 5px 10px;
+}
+
+main{
+  display: grid ;
+  grid-template-columns: 1fr 5fr;
+}
+
+
+main .content {
+  padding: 30px;
+
+}
+
+main .menu span{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+main .content .cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+}
+
+main .content .cards .card {
+  background-color: rgb(86, 205, 50);
+  padding: 50px 0px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+
+}
+
+
+
+@media screen and (max-width:900px){
+
+main{
+      grid-template-columns: 2fr 4fr;
+  }
+  main .content .cards {
+grid-template-columns: repeat(2,1fr);
+
+
+}
+
+}
+
+@media screen and (max-width:600px){
+  main .menu{
+      display: none;
+  }
+  header nav{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      
+  }
+
+
+  main{
+      grid-template-columns: 1fr;
+  }
+
+  main .content .cards{
+      grid-template-columns: 1fr;
+  }
+
+  
+ 
+}
+
+
+
+
+
+
+
+
+          /* The progress container (grey background) */
+          .progress-container {
+            width: 100%;
+            height: 5px;
+            background: #ccc;
+            position: fixed;
+            margin-top:-20px;
+            margin-left: -20px;
+          }
+          
+          /* The progress bar (scroll indicator) */
+          .progress-bar {
+            height: 5px;
+            background:  linear-gradient(#e66465, #9198e5);
+            width: 0%;
+          }
+        
+
+
+         /* The progress container (grey background) */
+         .progress-container {
+          width: 100%;
+          height: 5px;
+          background: #ccc;
+          position: fixed;
+          margin-top:-20px;
+          margin-left: -20px;
+        }
+        
+        /* The progress bar (scroll indicator) */
+        .progress-bar {
+          height: 5px;
+          background:  linear-gradient(#e66465, #9198e5);
+          width: 0%;
+        }
+      
+
+
+
+
+   /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
