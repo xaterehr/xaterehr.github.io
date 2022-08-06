@@ -1,3 +1,5 @@
+/*
+
 const countEl = document.getElementById('count');
 
 updateVisitCount();
@@ -11,6 +13,7 @@ function updateVisitCount() {
 }
 
 
+*/
 
 
 
