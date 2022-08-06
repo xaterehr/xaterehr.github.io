@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/876b964deb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>خاطره</title>
+</head>
+<body">
+
+    <style>
+         body {
+            height: 200vh;
+            margin: 0;
+            font-size: 16px;
+            background-color:whitesmoke;
+        }
+        main .content{
+            direction: rtl;
+        }
+
+        .main-container{
+            width: 100%;
+            max-width: 1800px;
+            margin: 0px auto;
+            font-size: 1em;
+        }
+        header , footer{
+            background-color:#e66465;
+            padding: 20px;
+            color: aliceblue
+        }
+
+        footer {
+            text-align: center;
+            position: fixed;
+            padding: 10px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #box1 {
+            background-color: orange;
+        }
+        #box2 {
+            background-color: #34fe9b;
+        } 
+        
+        #box3 {
+            background-color:#736dd5;
+        }
+
+        header nav{
+            display: flex;
+        }
+
+        header nav span{
+            margin-right: 20px;
+         
+            padding: 5px 10px;
+        }
+
+        main{
+            display: grid ;
+            grid-template-columns: 1fr 5fr;
+        }
+
+
+        main .content {
+            padding: 30px;
+
+        }
+
+        main .menu span{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        main .content .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+
+        }
+
+        main .content .cards .card {
+            background-color: rgb(86, 205, 50);
+            padding: 50px 0px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+
+
+        
+@media screen and (max-width:900px){
+    
+    main{
+                grid-template-columns: 2fr 4fr;
+            }
+            main .content .cards {
+        grid-template-columns: repeat(2,1fr);
+   
+    
+}
+
+}
+
+@media screen and (max-width:600px){
+            main .menu{
+                display: none;
+            }
+            header nav{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 10px;
+                
+            }
+
+
+            main{
+                grid-template-columns: 1fr;
+            }
+
+            main .content .cards{
+                grid-template-columns: 1fr;
+            }
+
+            
+           
+        }
+
+
+
+ 
+
+           
+
+    </style>
+
+
+
+    <div class="main-container">
+        <header>
+           <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+           </div>
+      
+      <nav>
+
+                <i class="fa fa-address-card">
+                <span>درباره ی من</span>
+                </i>
+                <i class="fa fa-chalkboard">
+                <span>اموزش ها</span>
+                </i>
+                <i class="fa fa-book">
+                <span>کتاب ها</span>
+                </i>
+                <i class="fa fa-gamepad">
+                <span>بازی ها و برنامه ها</span>
+                </i>
+                <i class="fa fa-book">
+                <span> داستانهای دو زبانه</span>
+                </i>
+
+            </nav>
+            <section>
+                <h3>سلام به  سایت ی من خوش امدید</h3>
+            </section>
+        </header>
+        <main>
+
+            <section class="menu">
+            </section>
+
+            <section class="content">
+                <h1> قیود تکرار</h1>
+                <p> قیود تکرار قیودی هستند که میزان و مقدار انجام کاری را مشخص میکند و پیش از فعل اصلی می اید 
+
+
+
+                    و شامل always همیشه 
+                
+                    usually معمولا 
+                
+                ofen اغلب 
+                
+                sometime گاهی 
+                
+                never هرگز 
+                میباشد برای نمونه 
+                i always feed to my pet 
+                من همیشه به حیوان خانگی ام غذا میدهم
+                توجه شود اینجا always پیش از feed که عمل غذا دادن است امده است
+                he never likes her 
+                او هرگز او را دوست ندارد
+                </p>            
+             
+                <h1>     امر و نهی </h1>  
+                <p> برای نهی کردن کافی است که 
+                    dont یا do not را به ابتدای جمله اضافه کنیم برای نمونه dont be rude : پر رو نباش 
+                \\\\ و برای امر کردن جمله کافی است که ابتدای جمله به همراه مصدر بدون to بیاید  مانند go to the park 
+            برو به پارک توجه شود در ابتدای جمله go بدون to امده است</p>       
+                <div class="cards">
+                    <div id="box1" class="card">buy</div>
+                    <div id="box2" class="card">buy</div>
+                    <div id="box3" class="card">buy</div>
+                </div>
+
+            </section>
+            
+            
+            
+        </main>
+        <footer>
+            <a href="https://www.instagram.com/xatereh_english/" target="_blank"><i class="fa fa-instagram" style="font-size:30px;color:red"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCcFWb29Dia2kKyrb4L2ZFEA">
+            <i class="fa fa-youtube-play" style="font-size:30px;color:red"></i>
+            </a>
+            <div id="visits">...</div>
+            <script>
+                function count(response) {
+                    document.getElementById('visits').innerText = response.value;
+                }
+                </script>
+                <script async src="https://api.countapi.xyz/hit/khatereh.github.io/visits?callback=count"></script>
+        </footer>
+    </div>
+
+
+    
+    <script>
+        
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+
+        }
+    </script>
+    <style>
+          /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: fixed;
+    margin-top:-20px;
+    margin-left: -20px;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 5px;
+    background:  linear-gradient(#e66465, #9198e5);
+    width: 0%;
+  }
+
+    </style>
+
+
+    
+
+
+</body>
+</html>
+
